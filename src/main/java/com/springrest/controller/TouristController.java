@@ -43,7 +43,7 @@ public class TouristController {
 
 	@GetMapping("/findAll")
 	public ResponseEntity<?> displayTourists() {
-		log.info("Inside displayTourists method of TouristController");
+		log.info("Inside displayTourists method of TouristControlle");
 		try {
 			List<Tourist> list = service.findAllTourists();
 			return new ResponseEntity<List<Tourist>>(list, HttpStatus.OK);
